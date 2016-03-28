@@ -1,0 +1,44 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.nav {
+  padding:0px;/*为了边框所以内外边距为0*/
+  margin:0px;
+  list-style:none;/*去掉黑点*/
+  width:198px;/*设定宽度*/
+  font-size:12px;/*设定字体*/
+}
+.nav  li{
+
+  position:relative;/*布局为relative在父容器的内部为准，目的是形成单独的层，掩盖下面的内容*/
+  border:1px solid #ccc;/*加上边框*/
+}
+.nav  ul{
+  position:absolute;/*绝对布局*/
+  left:129px;/*根据父容器的的父容器ul的宽度来定位*/
+  top:0px;/*也是定位*/
+  display:none;/*不显示*/
+}
+.nav  li a{
+  display:block;/*块显示*/
+  text-decoration:none;/*无下划线*/
+  color:#777;
+  background:#fff;
+  padding:5px 5px 5px 20px;
+  border:2px solid #99aee2;/*边框*/
+  border-bottom:0px;
+  height:20px;
+  /*margin: 2px;*/
+}
+
+
+/*
+li:hover ul{
+  display:block;/!*显示内容*!/
+}*/
